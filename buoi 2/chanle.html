@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <label for="inputSo">Nhập số:</label>
+    <input type="number" id="inputSo">
+    <button onclick="KiemTraSo()">Kiểm tra</button>
+</body>
+<script>
+    function KiemTraSo() {
+        var so = document.getElementById("inputSo").value;
+        if (so % 2 == 0) {
+            alert(so + " là số chan");
+        } else {
+            alert(so + " là số le");
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Important</p>
+    Nhap he so a: <input type="text" id="a">
+    Nhap he so b: <input type="text" id="b">
+
+    <button onclick="test()">OK</button>
+    <button>Cancel</button>
+    <p>Return: <span id="demo"></span></p>
+
+
+    <script>
+        function test() {
+            var x = parseInt(document.getElementById("a").value);
+            var y = parseInt(document.getElementById("b").value);
+            document.getElementById("demo").innerHTML = x + y;
+        }
+    </script>
+
+</body>
+
+</html>
